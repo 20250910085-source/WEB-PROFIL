@@ -1,0 +1,300 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #222;
+    line-height: 1.7;
+}
+.header {
+    background: linear-gradient(
+        to left,
+        darkred 0%,
+        #d9e230 50%,
+        white 100%
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1;
+}
+
+.header font {
+    display: inline-block;
+    margin: 5px 0;
+}
+
+nav {
+    background-color: darkred;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: #a52a2a;
+    border-radius: 5px;
+}
+
+
+/* =================================
+   BAGIAN UTAMA
+================================= */
+
+main {
+    background-color: #f2f2f2;
+    padding: 30px 0;
+    min-height: 100vh;
+}
+
+
+/* KOTAK KONTEN*/
+
+.konten {
+    background-color: white;
+    width: 85%;
+    margin: 25px auto;
+    padding: 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+}
+
+
+/*JUDUL*/
+
+h1 {
+    color: darkred;
+    font-size: 32px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: darkred;
+    font-size: 23px;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #800000;
+}
+
+
+/* =================================
+   PARAGRAF
+================================= */
+
+p {
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+
+/* =================================
+   LIST / DAFTAR
+================================= */
+
+ul, ol {
+    padding-left: 35px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 5px;
+}
+
+
+/* =================================
+   GAMBAR
+================================= */
+
+.konten img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px auto 25px;
+}
+
+
+/* =================================
+   TABEL DAFTAR DOSEN
+================================= */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    font-size: 16px;
+}
+
+table, th, td {
+    border: 1px solid #aaa;
+}
+
+th {
+    background-color: darkred;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+td {
+    padding: 12px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #fce8e8;
+}
+
+
+/* =================================
+   DETAIL / INFORMASI PROGRAM STUDI
+================================= */
+
+details {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-left: 4px solid darkred;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+summary {
+    color: darkred;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+details p {
+    margin-top: 15px;
+}
+
+
+/* =================================
+   LINK
+================================= */
+
+a {
+    color: darkred;
+}
+
+.konten a:hover {
+    color: #b22222;
+}
+
+
+/* =================================
+   GARIS PEMISAH
+================================= */
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 25px 0;
+}
+
+
+/* =================================
+   FOOTER
+================================= */
+
+footer {
+    background-color: darkred;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+}
+
+
+/* =================================
+   RESPONSIVE UNTUK HP
+================================= */
+
+@media screen and (max-width: 768px) {
+
+    .konten {
+        width: 94%;
+        padding: 20px;
+    }
+
+    .header {
+        padding: 20px 10px;
+    }
+
+    .header font[size="7"] {
+        font-size: 30px;
+    }
+
+    nav {
+        padding: 8px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+}

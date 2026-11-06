@@ -1,0 +1,70 @@
+/* Mengatur halaman */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+/* Background foto hanya sampai garis hitam */
+.header {
+    background: linear-gradient(
+        to left,
+        darkred 0%,
+        #d9e230 50%,
+        white 100%
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1;
+}
+
+/* Judul fakultas */
+h1 {
+    font-family: "Times New Roman", serif;
+    font-size: 45px;
+    color: black;
+    margin-top: 0;
+
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1;
+}
+
+/* Nama universitas */
+h2 {
+    font-size: 30px;
+    color: darkgoldenrod;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1;
+}
+
+/* Alamat */
+p {
+    font-size: 20px;
+    color: black;
+    text-align: left;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1;
+}
+
+/* Garis hitam */
+hr {
+    height: 4px;
+    background-color: black;
+    border: none;
+    margin-bottom: 0;
+}

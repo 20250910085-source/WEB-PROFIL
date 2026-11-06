@@ -1,0 +1,231 @@
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(
+        to left,
+        #1A0000 0%,
+        #8B0000 50%,
+        #E53935 100%
+    );
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 1;
+}
+
+
+header {
+    background: linear-gradient(
+        135deg,
+        #444242,
+        #711f1f,
+        #961111,
+    );
+
+    color: white;
+    text-align: center;
+    padding: 50px 20px 35px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin: 0;
+    letter-spacing: 3px;
+}
+
+header p {
+    font-size: 18px;
+    margin: 5px 0 25px;
+}
+
+nav {
+    margin-top: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #961111;
+    border-radius: 5px;
+}
+
+main {
+    width: 85%;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+
+section h2 {
+    color: #961111;
+    font-size: 26px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #961111;
+    padding-bottom: 10px;
+}
+
+section h3 {
+    color: #961111;
+    font-size: 21px;
+    margin-top: 25px;
+}
+
+
+section p {
+    font-size: 16px;
+    text-align: justify;
+    line-height: 1.8;
+}
+
+
+section img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    border: 5px solid #961111;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    font-size: 16px;
+}
+
+table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+}
+
+table tr:nth-child(odd) {
+    background-color: #eaf4fb;
+}
+
+table tr td:first-child {
+    font-weight: bold;
+    width: 35%;
+    color: #961111;
+}
+
+ul, ol {
+    padding-left: 30px;
+}
+
+li {
+    padding: 5px 0;
+    font-size: 16px;
+}
+
+a {
+    color: #961111;
+}
+
+section a:hover {
+    color: #961111;
+}
+
+section > a {
+    display: inline-block;
+    background-color: #961111;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+section > a:hover {
+    background-color: #961111;
+    color: white;
+}
+
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 25px 0;
+}
+
+
+footer {
+    background-color: #961111;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    main {
+        width: 95%;
+    }
+
+    header {
+        padding: 30px 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav a {
+        font-size: 13px;
+        padding: 8px;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 22px;
+    }
+
+    table {
+        font-size: 13px;
+    }
+
+    table td {
+        padding: 8px;
+        overflow-wrap: anywhere;
+    }
+}

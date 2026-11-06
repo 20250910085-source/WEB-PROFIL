@@ -1,0 +1,16 @@
+
+body {
+    background-color: burlywood;
+    font-family: Arial;
+    text-align: center;
+}
+
+h1 {
+    color: darkred;
+    font-size: 32px;
+}
+
+p {
+    color: black;
+    font-size: 18px;
+}

@@ -1,0 +1,106 @@
+
+/* PENGATURAN BODY */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 40px;
+    color: #333;
+}
+
+/* FORMULIR */
+form {
+    width: 550px;
+    margin: 20px auto;
+}
+
+/* FIELDSET */
+fieldset {
+    background-color: white;
+    border: 2px solid darkred;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* TABEL */
+table {
+    width: 100%;
+    border-spacing: 10px;
+}
+
+/* TULISAN LABEL */
+td {
+    font-size: 15px;
+    padding: 5px;
+}
+
+/* INPUT DAN TEXTAREA */
+input[type="text"],
+input[type="date"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* RADIO BUTTON */
+input[type="radio"] {
+    margin-right: 5px;
+    accent-color: darkred;
+}
+
+/* EFEK SAAT INPUT DIKLIK */
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    border-color: darkred;
+    box-shadow: 0 0 5px rgba(139, 0, 0, 0.3);
+}
+
+/* TOMBOL SIMPAN */
+input[type="submit"] {
+    background-color: darkred;
+    color: white;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* TOMBOL BATAL */
+input[type="reset"] {
+    background-color: #777;
+    color: white;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* EFEK HOVER TOMBOL */
+input[type="submit"]:hover {
+    background-color: #a52a2a;
+}
+
+input[type="reset"]:hover {
+    background-color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        width: 100%;
+    }
+}
