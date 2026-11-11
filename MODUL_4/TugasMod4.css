@@ -1,0 +1,158 @@
+
+/* PENGATURAN DASAR */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 75px;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(to right, #26364a, #526b88);
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header h2 {
+    color: #e0bd71;
+    margin: 5px 0;
+}
+
+header p {
+    margin-bottom: 0;
+}
+
+/* NAVBAR */
+nav {
+    background-color: #172536;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #526b88;
+    border-radius: 5px;
+}
+
+/* BAGIAN KONTEN */
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* JUDUL */
+section h2 {
+    color: #26364a;
+    border-bottom: 2px solid #d6b66e;
+    padding-bottom: 8px;
+}
+
+section h3 {
+    color: #405b78;
+}
+
+/* DAFTAR */
+li {
+    margin-bottom: 7px;
+}
+
+/* TABEL ALUMNI */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: white;
+}
+
+th {
+    background-color: #26364a;
+    color: white;
+    padding: 12px;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #eef2f6;
+}
+
+tr:hover {
+    background-color: #e0e8f1;
+}
+
+/* LINK */
+a {
+    color: #315f91;
+}
+
+nav a {
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: #172536;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 25px;
+}
+
+/* TAMPILAN HP */
+@media screen and (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav a {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+}
